@@ -1,6 +1,4 @@
 <?php
-// This file hooks into Moodle to inject Zammad chat bubble JS.
-
 defined('MOODLE_INTERNAL') || die();
 
 /**
@@ -30,5 +28,5 @@ jQuery(function() {
   });
 });
 EOD;
-    $PAGE->requires->js_foot_code($js);
+    $PAGE->requires->js_init_code($js);
 }
